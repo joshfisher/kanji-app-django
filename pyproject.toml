@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "kanji-api-django"
+version = "0.1.0"
+description = ""
+authors = ["joshfisher <junk.josh.business@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.4"
+djangorestframework = "^3.15.1"
+python-dotenv = "^1.0.1"
+psycopg2-binary = "^2.9.9"
+django-extensions = "^3.2.3"
+pytest-django = "^4.8.0"
+black = "^24.4.2"
+pyyaml = "^6.0.1"
+model-bakery = "^1.18.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "kanjiapp.settings"
